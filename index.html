@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="image_src" href="/images/notify_better_image.png" />
+
+	<meta content="http://www.thepetedesign.com/demos/onepage_scroll_demo.html" property="og:url" />
+	<meta content="http://www.thepetedesign.com/images/onepage_scroll_image.png" property="og:image" />
+	<link rel="shortcut icon" id="favicon" href="favicon.png"> 
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+  <link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+ 	<link href='css.css' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<script>
+	  $(document).ready(function(){
+      $(".main").onepage_scroll({
+        sectionContainer: "section",
+        responsiveFallback: 600,
+        loop: true
+      });
+		});
+		
+	</script>
+</head>
+<body>
+  <div class="wrapper">
+	  <div class="main">
+	    
+      <section class="page1">
+      	
+        <div class="page_container">
+
+
+          <div id="maintitle">Jordan Cartwright</div>
+          <br>
+          <div id="maintitlesub">Portfolio</div>
+
+  	    </div>
+
+  	    <div id="pagehint">
+  	    	<div id="nextpagehint">| <br> About</div>
+  	    	<div id="sideline"></div>
+  	    	<div id="sideline2"></div>
+
+  		</div>
+      </section>
+	    
+	    <section class="page2">
+	    	<div id="sideline"></div>
+	      <div class="page_container">
+
+          <h1>About Me</h1>
+          <h2>Hi! I'm a 19 year old UI/UX web developer based in Liverpool, UK and I currently study in Carmel college, on a UAL UI/UX foundation course that is teaching me more of the industry skills I will require in the future. I have been teaching myself HTML, CSS and Javascript since I joined High School at the age of 11. The first website I made was a game site to bypass the schools website blocking system. Ever since then I have been addicted to creating websites and UIs.  </h2>
+          <br>
+          
+
+	      </div>
+	      <br>
+	      <div id="pagehint">
+  	    	<div id="nextpagehint2">| <br> Work</div>
+  		</div>
+
+      </section>
+	    
+	    <section class="page3">
+	      <div class="page_container">
+	      	<h1>My Work</h1>
+          <h2>A selection of my 2019/2020 work.</h2>
+          <div class="btns">
+  	        <a class="reload btn" href="2019.html">2019</a>
+  	      </div>
+  	      
+  	      <div class="btns">
+  	        <a class="reload btn" href="2020.html">2020</a>
+  	      </div>
+  	    </div>
+
+  	    <div id="pagehint">
+  	    	<div id="nextpagehint3">| <br> Feedback</div>
+  		</div>
+
+      </section>
+
+      <section class="page4">
+	      <div class="page_container">
+	      	<div class="container">
+
+	      		
+  <form action="html_form_send.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="You email..">
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit" action="html_form_send.php" >
+
+  </form>
+</div>
+          
+
+  	    </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
