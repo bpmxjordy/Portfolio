@@ -313,6 +313,13 @@ background-image: linear-gradient( 107.2deg,  rgba(18,38,170,1) 12.9%, rgba(0,18
       font-weight: 100;
       font-size: 5.5vw;
     }
+
+    #pagehint {
+	display: inline;
+	width: 100%;
+	text-align: center;
+	margin-top: 2%;
+}
 }
 
 @media only screen and (max-width: 320px) {
@@ -323,6 +330,13 @@ background-image: linear-gradient( 107.2deg,  rgba(18,38,170,1) 12.9%, rgba(0,18
       font-weight: 100;
       font-size: 4vw;
     }
+
+        #pagehint {
+	display: inline;
+	width: 100%;
+	text-align: center;
+	margin-top: 2%;
+}
 }
 
     .viewing-page-2 .back{
