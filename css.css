@@ -349,6 +349,7 @@ background-image: linear-gradient( 107.2deg,  rgba(18,38,170,1) 12.9%, rgba(0,18
 
    .main section.page3 {
       background:url(soviet-building.png);
+	   background-repeat: no-repeat;
     }
     .main section.page3 .page_container {
       overflow: hidden;
