@@ -82,11 +82,11 @@
 	      	<h1>My Work</h1>
           <h2>A selection of my 2019/2020 work.</h2>
           <div class="btns">
-  	        <a class="reload btn" href="2019\2019.html">2019</a>
+  	        <a class="reload btn" href="2019\2019">2019</a>
   	      </div>
   	      
   	      <div class="btns">
-  	        <a class="reload btn" href="2020/2020.html">2020</a>
+  	        <a class="reload btn" href="2020/2020">2020</a>
   	      </div>
   	    </div>
 
@@ -126,4 +126,14 @@
     </div>
   </div>
 </body>
+
+<IfModule mod_rewrite.c>
+   RewriteEngine On
+   RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /html/(.*).html\ HTTP/
+   RewriteRule .* http://localhost/html/%1 [R=301,L]
+
+   RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /html/(.*)\ HTTP/
+   RewriteRule .* %1.html [L]
+</IfModule>
+
 </html>
