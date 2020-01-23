@@ -12,6 +12,9 @@
 <nav>
   <div class="container">
     <div class="grid">
+      <div class="column-xs-12 column-md-10">
+        <p id="highlight">Katherine Kato</p>
+      </div>
       <div class="column-xs-12 column-md-2">
         <ul>
           <li><a href="#" class="active">Work</a></li>
@@ -123,14 +126,4 @@
   <script  src="./script.js"></script>
 
 </body>
-  
-  <IfModule mod_rewrite.c>
-   RewriteEngine On
-   RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /html/(.*).html\ HTTP/
-   RewriteRule .* http://localhost/html/%1 [R=301,L]
-
-   RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /html/(.*)\ HTTP/
-   RewriteRule .* %1.html [L]
-</IfModule>
-  
 </html>
