@@ -184,6 +184,7 @@
     .btns {
       width: 410px;
       margin: 50px auto;
+      font-family: Roboto;
     }
     .credit {
       text-align: center;
