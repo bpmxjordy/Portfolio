@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <title>Bingo</title>
+    <link rel="stylesheet" href="./redstyle.css">
+
+</head>
+<body>
+
+<div id="wrapper">
+    
+    <table id="card">
+        <tr>
+            <td class="blank"></td>
+
+            <td class="button" onclick="window.location.href = 'bingo/bingo.html'">Back</td>
+
+            <td class="blank"></td>
+
+            <td class="button" onclick="cleared()">Clear</td>
+
+            <td class="blank"></td>
+
+        </tr>
+
+        <tr>
+            <td class="blank"></td>
+
+            <td class="blank"></td>
+
+            <td class="blank"></td>
+
+            <td class="blank"></td>
+
+            <td class="blank"></td>
+
+        </tr>
+    
+        <tr>
+            <td onclick="clicked()" class="white" id="cell0">Mario Kart 8 DLC</td>
+            <td onclick="clicked()" class="white" id="cell1">Half Life 3 Announced</td>
+            <td onclick="clicked()" class="white" id="cell2">LEGO Game Announced</td>
+            <td onclick="clicked()" class="white" id="cell3">Man Who Looks Like Matty</td>
+            <td onclick="clicked()" class="white" id="cell4">New Mario Party</td>
+        </tr>
+        <tr>
+            <td onclick="clicked()" class="white" id="cell5">Yoshiaki Koizumi</td>
+            <td onclick="clicked()" class="white" id="cell6">Cringe</td>
+            <td onclick="clicked()" class="white" id="cell7">Star Wars Game Announced</td>
+            <td onclick="clicked()" class="white" id="cell8">Indie Reel</td>
+            <td onclick="clicked()" class="white" id="cell9">Rainbow Six Quarantine</td>
+        </tr> "
+        <tr>
+            <td onclick="clicked()" class="white" id="cell10">God Of War 2</td>
+            <td onclick="clicked()" class="white" id="cell11">Smithy Has 5 Appearances</td>
+            <td onclick="clicked()" class="white" id="cell12">Free Space</td>
+            <td onclick="clicked()" class="white" id="cell13">Tomodachi Life 2</td>
+            <td onclick="clicked()" class="white" id="cell14">BOTW 2</td>
+        </tr>
+        <tr>
+            <td onclick="clicked()" class="white" id="cell15">Forza Horizon 4 Content</td>
+            <td onclick="clicked()" class="white" id="cell16">Cringey Trailer</td>
+            <td onclick="clicked()" class="white" id="cell17">Iron Man VR</td>
+            <td onclick="clicked()" class="white" id="cell18">Spiderman PS5</td>
+            <td onclick="clicked()" class="white" id="cell19">Man Who Looks Like Lee Attwood</td>
+        </tr>
+        <tr>
+            <td onclick="clicked()" class="white" id="cell20">We Get A Direct</td>
+            <td onclick="clicked()" class="white" id="cell21">New Nascar Game</td>
+            <td onclick="clicked()" class="white" id="cell22">New Cod</td>
+            <td onclick="clicked()" class="white" id="cell23">Random Celeb (Not Keanu Reeves)</td>
+            <td onclick="clicked()" class="white" id="cell24">Rockstar Give Release Date To Agent</td>
+        </tr>
+    </table>
+
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./redscript.js"></script>
+
+   <script>
+    var cell = "cell";
+
+
+
+    for (i = 0; i < 25; i++) {
+        var x = cell.concat(i)
+        document.getElementById(x).style.color = "black";
+        if (localStorage.getItem(x) == "true") {
+            document.getElementById(x).style.background = "#FF2525";
+            document.getElementById(x).style.color = "white";
+        }
+        if (i == "12") {
+            document.getElementById(x).style.background = "#FF2525";
+            document.getElementById(x).style.color = "white";
+        }
+    }
+   </script>
+</body>
+</html>

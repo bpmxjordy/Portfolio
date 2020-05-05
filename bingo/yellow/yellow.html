@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Bingo</title>
+  <link rel="stylesheet" href="./yellowstyle.css">
+
+</head>
+<body>
+
+<div id="wrapper">
+    
+    <table id="card">
+        <tr>
+            <td class="blank"></td>
+
+            <td class="button" onclick="reset()">Back</td>
+
+            <td class="blank"></td>
+
+            <td class="button" onclick="cleared()">Clear</td>
+
+            <td class="blank"></td>
+
+        </tr>
+
+        <tr>
+            <td class="blank"></td>
+
+            <td class="blank"></td>
+
+            <td class="blank"></td>
+
+            <td class="blank"></td>
+
+            <td class="blank"></td>
+
+        </tr>
+    
+        <tr>
+            <td onclick="clicked()" class="white" id="cell0">Woman Who Looks Like Jue</td>
+            <td onclick="clicked()" class="white" id="cell1">Bethesda Montage</td>
+            <td onclick="clicked()" class="white" id="cell2">F1 2020</td>
+            <td onclick="clicked()" class="white" id="cell3">Man Who Looks Like Jordan</td>
+            <td onclick="clicked()" class="white" id="cell4">New Narrative Based Game</td>
+        </tr>
+        <tr>
+            <td onclick="clicked()" class="white" id="cell5">PS5 Release Date</td>
+            <td onclick="clicked()" class="white" id="cell6">MW2 Remaster Gets Multiplayer</td>
+            <td onclick="clicked()" class="white" id="cell7">New Uncharted</td>
+            <td onclick="clicked()" class="white" id="cell8">Minecraft Shows Up</td>
+            <td onclick="clicked()" class="white" id="cell9">Elder Scrolls 6</td>
+        </tr> "
+        <tr>
+            <td onclick="clicked()" class="white" id="cell10">Fallout 76 Shit</td>
+            <td onclick="clicked()" class="white" id="cell11">Waluigi In Smash</td>
+            <td onclick="clicked()" class="white" id="cell12">Free Space</td>
+            <td onclick="clicked()" class="white" id="cell13">Keanu Reeves</td>
+            <td onclick="clicked()" class="white" id="cell14">Detective Pikachu 2</td>
+        </tr>
+        <tr>
+            <td onclick="clicked()" class="white" id="cell15">COVID-19 Is Mentioned</td>
+            <td onclick="clicked()" class="white" id="cell16">Watch Dogs Legion</td>
+            <td onclick="clicked()" class="white" id="cell17">Arms 2 Gets Announced</td>
+            <td onclick="clicked()" class="white" id="cell18">Justice League Game</td>
+            <td onclick="clicked()" class="white" id="cell19">New Battlefield</td>
+        </tr>
+        <tr>
+            <td onclick="clicked()" class="white" id="cell20">New Fifa Game</td>
+            <td onclick="clicked()" class="white" id="cell21">LEGO Star Wars Shows Up</td>
+            <td onclick="clicked()" class="white" id="cell22">Shadow Dropped Game</td>
+            <td onclick="clicked()" class="white" id="cell23">Marvel Ultimate Alliance 3 Shows Up</td>
+            <td onclick="clicked()" class="white" id="cell24">Karen Gillan Appears</td>
+        </tr>
+    </table>
+
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./yellowscript.js"></script>
+
+   <script>
+    var cell = "cell";
+
+
+
+    for (i = 0; i < 25; i++) {
+        var x = cell.concat(i)
+        document.getElementById(x).style.color = "black";
+        if (localStorage.getItem(x) == "true") {
+            document.getElementById(x).style.background = "#FAFB7E";
+
+        }
+        if (i == "12") {
+            document.getElementById(x).style.background = "#FAFB7E";
+
+        }
+    }
+   </script>
+</body>
+</html>
