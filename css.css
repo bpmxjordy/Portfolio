@@ -481,7 +481,11 @@ background-image: linear-gradient( 107.2deg,  rgba(18,38,170,1) 12.9%, rgba(0,18
 	bottom: 0;
 	float: auto;
 	text-align: center;
-	color: black;
+	background-image: radial-gradient( circle farthest-corner at 12.3% 19.3%,  rgba(85,88,218,1) 0%, rgba(95,209,249,1) 100.2% );	background-size: 400% 400%;
+	-webkit-animation: gradientBG 15s ease infinite;
+	        animation: gradientBG 15s ease infinite;
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 	width: 100%;
 }
 
